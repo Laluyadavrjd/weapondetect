@@ -1,0 +1,13 @@
+# Training configuration — edit freely, this file is committed.
+# Point `data` at your YOLO-format dataset yaml (see DATASET_GUIDE.md).
+
+data: training/data.yaml
+model: yolov8n.pt        # start from the COCO baseline, or a custom .pt
+imgsz: 640
+epochs: 100
+batch: 16
+device: auto             # auto | cpu | 0 (cuda)
+patience: 20
+seed: 42
+project: training/runs
+name: weapondetect-train

@@ -1,0 +1,85 @@
+{
+  "available": true,
+  "model": "yolov8n-weapondetect",
+  "model_family": "YOLOv8",
+  "checkpoint": "best.pt",
+  "dataset": "weapon-detect-qbsiw/yolo-weapon-detection v8 (cleaned: dropped 'blunt object')",
+  "dataset_license": "CC BY 4.0 \u2014 attribution: 'Yolo Weapon Detection' by weapon-detect-qbsiw, Roboflow Universe",
+  "classes": [
+    "Gunmen",
+    "Rifle",
+    "knife",
+    "knife_attacker",
+    "person",
+    "pistol",
+    "shot-gun",
+    "submachine-gun"
+  ],
+  "precision": 0.7633,
+  "recall": 0.7377,
+  "f1": 0.7503,
+  "map50": 0.7826,
+  "map50_95": 0.5421,
+  "per_class": [
+    {
+      "class": "Gunmen",
+      "precision": 0.8689,
+      "recall": 0.9078,
+      "ap50": 0.9253,
+      "ap50_95": 0.7015
+    },
+    {
+      "class": "Rifle",
+      "precision": 0.7434,
+      "recall": 0.7822,
+      "ap50": 0.8093,
+      "ap50_95": 0.5321
+    },
+    {
+      "class": "knife",
+      "precision": 0.9637,
+      "recall": 0.9545,
+      "ap50": 0.9604,
+      "ap50_95": 0.5321
+    },
+    {
+      "class": "knife_attacker",
+      "precision": 0.9457,
+      "recall": 0.9388,
+      "ap50": 0.9673,
+      "ap50_95": 0.884
+    },
+    {
+      "class": "person",
+      "precision": 0.8735,
+      "recall": 0.788,
+      "ap50": 0.8575,
+      "ap50_95": 0.6311
+    },
+    {
+      "class": "pistol",
+      "precision": 0.8994,
+      "recall": 0.7736,
+      "ap50": 0.8499,
+      "ap50_95": 0.4531
+    },
+    {
+      "class": "shot-gun",
+      "precision": 0.8116,
+      "recall": 0.7569,
+      "ap50": 0.8538,
+      "ap50_95": 0.5836
+    },
+    {
+      "class": "submachine-gun",
+      "precision": 0.0,
+      "recall": 0.0,
+      "ap50": 0.0374,
+      "ap50_95": 0.0195
+    }
+  ],
+  "inference_latency_ms": 20.0,
+  "device": "cuda",
+  "trained_at": "2026-10-19T18:26:56.896201+00:00",
+  "notes": "Test-split evaluation. 'submachine-gun' is rare (~46 annotations) \u2014 treat its scores cautiously."
+}

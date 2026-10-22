@@ -1,0 +1,23 @@
+# Backend dependencies — CPU-only PyTorch.
+# Install: python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+# (torch/torchvision resolve to CPU builds via the index below; everything
+# else falls through to PyPI.)
+
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
+
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-multipart==0.0.20
+pillow==11.1.0
+opencv-python==4.10.0.84
+numpy==1.26.4
+ultralytics==8.3.77
+
+# Dev / test
+pytest==8.3.4
+httpx==0.28.1

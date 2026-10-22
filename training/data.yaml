@@ -1,0 +1,18 @@
+# YOLO dataset configuration template.
+# Replace with your own dataset paths and class list.
+# Layout expected (YOLO format):
+#   datasets/weapon/
+#     train/images/*.jpg   train/labels/*.txt
+#     val/images/*.jpg     val/labels/*.txt
+#     test/images/*.jpg    test/labels/*.txt
+# Labels: "<class_id> <x_center> <y_center> <width> <height>" normalized to [0,1].
+
+path: datasets/weapon
+train: train/images
+val: val/images
+test: test/images
+
+nc: 2
+names:
+  0: firearm
+  1: knife

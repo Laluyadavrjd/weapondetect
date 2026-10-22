@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+mypy_cache/
+
+# Node (frontend agent)
+node_modules/
+dist/
+dist-ssr/
+*.local
+frontend/dist/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Datasets (large, often licensed — never commit)
+datasets/
+data/
+*.zip
+*.tar.gz
+
+# Model weights (runtime-downloaded or placed locally — never commit)
+*.pt
+*.onnx
+*.pth
+*.engine
+*.tflite
+*.weights
+
+# Uploads / temp
+uploads/
+temp/
+tmp/
+*.tmp
+runs/
+wandb/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
